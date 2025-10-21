@@ -9,10 +9,13 @@ for i in range(0,n):
     y=y+x
     x=y-x
     f=x-f
-for i in range(0,n,2):
-    a[i]**=2
-for i in range(1,n,2):
-    a[i]*=2
+print(a)
+for i in range(0,n):
+    if a[i]%2==0:
+        a[i]*=2
+for i in range(0,n):
+    if a[i]%2==1:
+        a[i]**=2
 print(a)
 for i in range(0,n):
     if a[i]>sum(a)/n:
